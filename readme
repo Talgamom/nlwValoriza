@@ -1,0 +1,6 @@
+Comandos typeorm
+yarn typeorm migration:create -n [Nome da migration que vai ser criada]
+Cria uma migration com o nome que voce escolheu
+
+yarn typeorm migration:run
+Atualiza as migrations
