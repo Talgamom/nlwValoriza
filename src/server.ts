@@ -3,14 +3,12 @@ import express, {Request, Response, NextFunction  } from "express";
 import "./database";
 import "express-async-errors";
 import {router} from "./routes";
-// import cors from "cors";
+import cors from "cors";
 
 const app = express();
 const porta = 3000;
 
-// app.use(cors({
-//   origin:""
-// }))
+app.use(cors());
 
 app.use(express.json());
 
